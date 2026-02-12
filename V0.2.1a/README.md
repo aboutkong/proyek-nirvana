@@ -23,14 +23,14 @@ menggunakan arsitektur register-based, mirip dengan desain LuaJIT.
 --------------------------------------------------------------------------------
 📂 STRUKTUR PROYEK
 --------------------------------------------------------------------------------
-
+```
 .
 ├── main.c          # Entry point, REPL, dan CLI Manager.
 ├── lexer.c/h       # Tokenizer dengan dukungan Indentation Stack.
 ├── parser.c/h      # Recursive Descent Parser -> AST.
 ├── vm.c/h          # Jantung Nirvana (Register execution, Value tagging).
 └── Makefile        # Script build otomatis.
-
+```
 --------------------------------------------------------------------------------
 ⚙️ SPESIFIKASI TEKNIS (VM INTERNALS)
 --------------------------------------------------------------------------------
