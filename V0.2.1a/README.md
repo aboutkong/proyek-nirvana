@@ -23,7 +23,7 @@ menggunakan arsitektur register-based, mirip dengan desain LuaJIT.
 --------------------------------------------------------------------------------
 📂 STRUKTUR PROYEK
 --------------------------------------------------------------------------------
-```
+```txt
 .
 ├── main.c          # Entry point, REPL, dan CLI Manager.
 ├── lexer.c/h       # Tokenizer dengan dukungan Indentation Stack.
@@ -52,29 +52,35 @@ Register Map:
 --------------------------------------------------------------------------------
 
 # 1. Gaya Nirvana (Python-like)
+```bash
 jika A == 10:
     cetak("A adalah sepuluh")
 lain:
     cetak("Bukan sepuluh")
-
+```bash
 # 2. Gaya Klasik (C-like)
+```bash
 fungsi hitung(x, y) maka {
     kembalikan x * y
 }
+```
 
 --------------------------------------------------------------------------------
 🛠️ CARA KOMPILASI
 --------------------------------------------------------------------------------
 
 Gunakan GCC atau Clang untuk mengompilasi seluruh source code:
-
+```
 $ gcc -o nirvana main.c lexer.c parser.c vm.c -lm
-
+```
 Untuk menjalankan file skrip:
+```
 $ ./nirvana my_code.nv
-
+```
 Untuk menjalankan mode debug (Bytecode dump):
+```
 $ ./nirvana -d my_code.nv
+```
 
 --------------------------------------------------------------------------------
 ⚠️ STATUS PENGEMBANGAN (ROADMAP)
