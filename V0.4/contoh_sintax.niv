@@ -1,0 +1,12 @@
+# Multi syntax
+
+#1 syntax mirip c
+fungsi tambah(a, b) {
+   kembali a + b;
+}
+
+#2 syntax mirip python
+defi tambah(a, b):
+   kembali a + b
+   
+

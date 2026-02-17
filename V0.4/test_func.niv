@@ -1,0 +1,13 @@
+fungsi kali(a, b) {
+  kembali a * b;
+}
+
+var hasil = kali(5, 3);
+cetak(hasil);
+
+fungsi tambahTiga(x) {
+  cetak("Memanggil tambahTiga dengan:", x);
+  kembali x + 3;
+}
+
+cetak(tambahTiga(10));
